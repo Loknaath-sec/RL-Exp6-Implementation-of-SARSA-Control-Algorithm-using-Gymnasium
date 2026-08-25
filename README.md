@@ -78,7 +78,14 @@ $$
 
 
 ## Algorithm
-
+1. Initialize the FrozenLake environment and create a Q-table with zeros for all state-action pairs.
+2. Set the learning rate (α), discount factor (γ), exploration rate (ε), and number of training episodes.
+3. eset the environment and select the initial action using the epsilon-greedy policy.
+4. Take the selected action, observe the reward and next state, and check whether the episode has ended.
+5. If the episode is not finished, select the next action using the epsilon-greedy policy.
+6. Update the Q-value using the SARSA rule:
+Q(s,a) ← Q(s,a) + α[R + γQ(s',a') − Q(s,a)]
+7. Repeat the process for all episodes, gradually reduce ε, and finally use the learned Q-table to obtain the state-value function and learned policy.
 
 ## Python Program
 ```py
