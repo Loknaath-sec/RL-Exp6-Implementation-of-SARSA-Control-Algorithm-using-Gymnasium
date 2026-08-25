@@ -1,4 +1,4 @@
-# Implementation-of-SARSA-Control-Algorithm-using-Gymnasium
+# Exp-6 Implementation of SARSA Control Algorithm using Gymnasium
 
 ## Aim
 
@@ -366,11 +366,13 @@ env.close()
 
 ### Final Q-table:
 
+<img width="363" height="353" alt="image" src="https://github.com/user-attachments/assets/dc872d53-a48d-4569-8b32-017b6641c724" />
 
 
 
 
 ### Estimated State-Value Function:
+<img width="398" height="112" alt="image" src="https://github.com/user-attachments/assets/6dd76452-d907-4106-b118-3f8bf786fa47" />
 
 
 
@@ -378,19 +380,24 @@ env.close()
 
 ### Learned Policy:
 
+<img width="327" height="107" alt="image" src="https://github.com/user-attachments/assets/1b84f1bf-def9-4c9d-947f-620b89066022" />
 
 
 
 ### Average reward over last 1000 episodes: 
 
+<img width="422" height="46" alt="image" src="https://github.com/user-attachments/assets/19e86be8-10b2-4c99-b45a-7afa9a6646c1" />
+
+### Plot Learning Curve
+<img width="877" height="590" alt="image" src="https://github.com/user-attachments/assets/a6d82d47-9d07-490e-b6b9-3a98a14164ea" />
 
 
 ---
 
 ## Result
-```text
+
 The SARSA algorithm successfully learns an action-value function for the FrozenLake environment. After training, the Q-table contains the learned values for each state-action pair. The maximum Q-value for each state is used to estimate the state-value function, and the action with the highest Q-value is selected to form the learned policy. The average reward over the final episodes can be used to measure the learning performance of the agent.
-```
+
 
 ---
 
