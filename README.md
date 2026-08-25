@@ -364,28 +364,26 @@ env.close()
 
 ## Output
 
-```text
-Final Q-table:
+### Final Q-table:
 
 
 
 
 
-Estimated State-Value Function:
+### Estimated State-Value Function:
 
 
 
 
 
-Learned Policy:
+### Learned Policy:
 
 
 
 
-Average reward over last 1000 episodes: 
+### Average reward over last 1000 episodes: 
 
 
-```
 
 ---
 
