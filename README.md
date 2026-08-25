@@ -7,15 +7,21 @@ To implement the **SARSA control algorithm** using the Gymnasium `FrozenLake-v1`
 ---
 
 ## Problem Statement
-
+The objective of this experiment is to implement the SARSA (State-Action-Reward-State-Action) control algorithm using the Gymnasium FrozenLake-v1 environment. The agent learns an action-value function (Q-table) through repeated interaction with the environment. It uses an epsilon-greedy policy to balance exploration and exploitation and learns to select suitable actions for reaching the goal while avoiding unsafe
 
 
 ## Software Requirements
-
+Python 3.x
+Jupyter Notebook
+NumPy
+Matplotlib
+Gymnasium
+FrozenLake-v1 environment
+A system capable of running Python programs
 
 
 ## Environment Description
-
+The experiment uses the FrozenLake-v1 environment provided by Gymnasium. The environment represents a grid where the agent starts from a starting state and must reach the goal state while avoiding holes. The agent can move in four directions: Left, Down, Right, and Up. Since is_slippery=True is used, the agent may sometimes move in a different direction than intended. This introduces uncertainty and makes the learning problem more realistic. The SARSA algorithm learns from the actions actually selected by the agent and gradually improves the Q-values through repeated episodes. The custom layout used in this experiment places the starting state in the first row and the goal state in the last row.
 
 
 ## Theory
@@ -378,18 +384,18 @@ Average reward over last 1000 episodes:
 
 ## Result
 ```text
-
-
-
+The SARSA algorithm successfully learns an action-value function for the FrozenLake environment. After training, the Q-table contains the learned values for each state-action pair. The maximum Q-value for each state is used to estimate the state-value function, and the action with the highest Q-value is selected to form the learned policy. The average reward over the final episodes can be used to measure the learning performance of the agent.
 ```
 
 ---
 
 ## Inference
 ```text
-
-
-
+SARSA learns an effective policy by updating Q-values using the action actually selected in the next state.
+The epsilon-greedy policy allows the agent to explore different actions while gradually learning to exploit better actions.
+Because the FrozenLake environment is slippery, the agent must learn to handle uncertain movements and avoid risky paths.
+With more training episodes, the Q-values become more stable and the learned policy generally improves.
+The final Q-table, state-value function, learned policy, and average reward show how well SARSA has learned to reach the goal.
 ```
 ---
 
